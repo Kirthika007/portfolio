@@ -1,0 +1,91 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirthika KS | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f4ef;
+    }
+  </style>
+</head>
+<body class="text-[#5a4231]">
+  <!-- NAVIGATION BAR -->
+  <nav class="flex justify-between items-center p-4 bg-[#f5eee7] shadow-md sticky top-0 z-10">
+    <div class="text-xl font-bold text-[#5a4231]">Kirthika KS</div>
+    <ul class="flex gap-6 text-[#5a4231] font-medium">
+      <li><a href="index.html" class="hover:underline">Home</a></li>
+      <li><a href="projects.html" class="hover:underline">Projects</a></li>
+      <li><a href="certificates.html" class="hover:underline">Certificates</a></li>
+      <li><a href="dsa.html" class="hover:underline">DSA</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="text-center py-16 px-6 animate-fade-in">
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Kirthika KS</h1>
+    <p class="text-xl">An aspiring engineer & creative soul 🧸</p>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="max-w-4xl mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-4">About Me</h2>
+    <p class="text-lg">
+      I'm currently pursuing Electronics & Computer Engineering [EKE] at SRM Institute of Science and Technology.
+      I'm passionate about design, code, and turning creative ideas into beautiful digital experiences.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-[#a88b73]">
+    © 2025 Kirthika KS. Made with ☕ and Tailwind CSS.
+  </footer>
+
+  <!-- Tailwind Fade Animation -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            'fade-in': 'fadeIn 2s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: 0 },
+              '100%': { opacity: 1 },
+            },
+          },
+        },
+      },
+    }
+  </script>
+  <!-- CONTACT SECTION -->
+<section class="text-center py-12 bg-[#f8f4ef] text-[#543321]" id="contact">
+    <h2 class="text-3xl font-bold mb-6">Let’s Connect</h2>
+    <div class="flex justify-center gap-6 text-4xl">
+  
+      <!-- Instagram -->
+      <a href="https://instagram.com/k.rth.ka" target="_blank" class="hover:text-pink-600">
+        <i class="fab fa-instagram"></i>
+      </a>
+  
+      <!-- Email -->
+      <a href="mailto:kirthikabkr@gmail.com" class="hover:text-red-500">
+        <i class="fas fa-envelope"></i>
+      </a>
+  
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/your_linkedin" target="_blank" class="hover:text-blue-600">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      
+    </div>
+  </section>
+  <a href="#contact" class="hover:underline">Contact</a>
+
+</body>
+</html>
