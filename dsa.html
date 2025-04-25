@@ -1,12 +1,13 @@
-<!-- dsa.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>DSA Zone | Kirthika</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#f9f4ef] text-[#5a4231]">
+
+  <!-- Navbar -->
   <nav class="flex justify-between items-center p-4 bg-[#f5eee7] shadow-md sticky top-0 z-10">
     <div class="text-xl font-bold">Kirthika KS</div>
     <ul class="flex gap-6 font-medium">
@@ -17,25 +18,43 @@
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <section class="max-w-5xl mx-auto px-6 py-10">
-    <h2 class="text-3xl font-bold mb-6">DSA Resources</h2>
+    <h2 class="text-3xl font-bold mb-6">🧠 DSA Resources</h2>
 
-    <!-- PDF Link -->
-    <a href="files/dsa-pdf.pdf" class="block mb-4 underline text-lg">📄 Download DSA PDF</a>
+    <!-- PDFs Section -->
+    <div class="mb-8">
+      <h3 class="text-2xl font-semibold mb-4">📄 DSA PDFs</h3>
+      <ul class="space-y-2 text-lg list-disc pl-5">
+        <li><a href="assets/pdf/ASSIGNMENT_1.pdf" class="underline text-brown-700 hover:text-brown-900" target="_blank">Assignment_1</a></li>
+        <li><a href="assets/pdf/ASSIGNMENT_2.pdf" class="underline text-brown-700 hover:text-brown-900" target="_blank">Assignment_2</a></li>
+        <li><a href="assets/pdf/CASE STUDY POSTER.pdf" class="underline text-brown-700 hover:text-brown-900" target="_blank">CASE STUDY POSTER</a></li>
+        <li><a href="assets/pdf/PERSONALIZED NEWSFEED SYSTEM .pdf" class="underline text-brown-700 hover:text-brown-900" target="_blank">PERSONALIZED NEWSFEED SYSTEM</a></li>
 
-    <!-- Video -->
-    <video controls class="w-full max-w-xl rounded-xl shadow mb-6">
-      <source src="files/dsa-video.mp4" type="video/mp4">
-    </video>
+      </ul>
+    </div>
 
-    <!-- Poster -->
-    <img src="files/poster.jpg" alt="DSA Poster" class="w-full max-w-xl rounded-xl shadow" />
+    <!-- Video Section -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold mb-4">🎥 Project Video</h3>
+      <video controls class="w-full max-w-xl rounded-xl shadow-lg">
+        <source src="assets/video/ACTIVITY_VIDEO.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-    <!-- Report (Text) -->
-    <div class="mt-6 p-4 bg-white rounded-lg shadow-md">
-      <h3 class="font-bold text-xl mb-2">Short Report</h3>
-      <p>This project demonstrates DSA using custom heap, graph, and tree structures for optimized performance.</p>
+    <!-- Poster Section -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold mb-4">🖼️ Poster</h3>
+      <img src="assets/images/poster.jpg" alt="DSA Poster" class="w-full max-w-xl rounded-xl shadow-md" />
+    </div>
+
+    <!-- Report Summary -->
+    <div class="p-6 bg-white rounded-xl shadow-md">
+      <h3 class="font-bold text-xl mb-2">📌 Report Summary</h3>
+      <p>This project demonstrates various DSA implementations using graphs, heaps, and BSTs with a GUI. The focus was on efficient searching and display of personalized content based on graph connections.</p>
     </div>
   </section>
+
 </body>
 </html>
